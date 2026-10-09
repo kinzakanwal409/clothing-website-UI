@@ -1,0 +1,396 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.body{
+     background-color: rgb(255,250,244);
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 5px;
+}
+.nav-links ol{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    gap: 20px;
+}
+.nav-links a{
+    color: #40200c;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+}
+
+.nav-icons{
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    list-style: none;
+    gap: 10px;
+    padding: 10px;
+}
+
+.cart{
+    position: relative;
+}
+.cart span{
+    background-color: red;
+    color: white;
+    font-size: 10px;
+    padding: 3px 5px;
+    border-radius: 100px;
+    position: absolute;
+    right: 0px;
+}
+
+.main{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px 0px;
+}
+.new{
+    color: rgb(204, 153, 95);
+    margin-bottom: 25px;
+}
+.main h1{
+    font-size: 100px;
+}
+.image{
+    position: relative ;
+}
+.off{
+    /* position: absolute;
+    right: 0;
+    border: 2px solid #40200c;
+    border-radius: 100px;
+    box-shadow: 0px 0px 10px #40200c; */
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+
+    right: 0;
+    /* top: 10px; */
+
+    border: 2px solid #40200c;
+    border-radius: 50%;
+
+    box-shadow: 0 0 10px #40200c;
+
+    /* z-index: 2; */
+}
+
+.child{
+    filter: drop-shadow(0px 0px 20px #40200c);
+    height: 500px;
+}
+
+.child:hover{
+    /* height: 550px; */
+    transform: scale(1.08);
+    filter: drop-shadow(0px 0px 20px #40200c);
+}
+
+.essential{
+    color: rgb(204,153,95);
+}
+.drop{
+    color: black;
+    margin-bottom: 20px;
+}
+.main button, .shop button, .sale button{
+    border: none;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 5px 10px;
+    background-color: black;
+    font-size: 12px;
+    height: 38px;
+}
+
+.ribbon {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    background-color: rgb(207, 206, 206);
+
+    padding: 15px 30px;
+    gap: 30px;
+
+    margin: 20px 0;
+}
+
+.ribbon .box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 12px;
+
+    /* flex: 1; */
+    min-width: 180px;
+}
+
+.ribbon .box img {
+    display: block;
+}
+
+.ribbon .box h4 {
+    margin: 0 0 5px;
+    color: #40200c;
+}
+
+.ribbon .box p {
+    margin: 0;
+    font-size: 13px;
+    color: #555;
+}
+
+/* .ribbon{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color:rgb(207, 206, 206) ;
+}
+
+.ribbon .box{
+    display: flex;
+    justify-content: space-around;
+    align-items: center; 
+    flex-wrap: wrap; 
+    gap:20px ; 
+} */
+
+.product{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.product .item{
+    background-color: rgb(227,224,219);
+    border-radius: 15px;
+    margin-bottom: 15px;
+    padding: 10px;
+    margin: 30px;
+    gap: 25px;
+    object-fit: cover;
+    align-items: center;
+}
+
+.item img{
+    height: 200px;
+    width: 190px;
+    margin: 0 auto 15px;
+}
+
+.item h4 {
+    margin: 5px 0;
+    color: #40200c;
+}
+
+/* .product .item:hover {
+    transform: translateY(-6px);
+} */
+
+.item p{
+    color: goldenrod;
+    margin-top: 5px;
+}
+
+.item:hover ,.sale1:hover ,.sale2:hover{
+    box-shadow: 0px 0px 20px rgb(112, 112, 112);
+
+}
+
+.accessories {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.accessories .item{
+    background-color: rgb(227,224,219);
+    border-radius: 15px;
+    margin-bottom: 15px;
+    padding: 10px;
+    margin: 30px;
+    gap: 25px;
+    object-fit: cover;
+    align-items: center;
+}
+.sale{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px 0px;
+    flex-wrap: wrap;
+}
+.sale1 ,.sale2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:rgb(236, 233, 227);
+    width: 45%;
+    padding: 20px;
+    border-radius: 25px;
+}
+
+.sale1 h3,.sale2 h3 ,.shop h3{
+    font-size: 30px;
+    font-family: Aldhabi;
+    padding: 15px 0px;
+    line-height: 1em;
+    word-spacing: 0.2em;
+    color: #40200c;
+}
+
+.shop{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 50px 0px;
+    /* width: 50%; */
+    border-radius: 25px;
+    background-color: antiquewhite;
+}
+.shop input[type="email"]{
+    padding: 10px;
+    width: 300px;
+}
+.shop p{
+    padding-bottom: 10px;
+}
+.shop button{
+    background-color: black;
+    color: white;
+    border: 2px solid;
+    padding: 10px 20px;
+    font-size: 15px;
+    margin: -4px;
+}
+footer{
+    padding: 25px;
+    border-top: 1px solid rgb(199, 195, 190);
+    font-size: 16px;
+    text-align: center;
+}
+
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-links ol {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .main {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .main h1 {
+        font-size: 55px;
+    }
+
+    .child {
+        height: 350px;
+    }
+}
+
+@media (max-width: 768px) {
+    .ribbon {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .ribbon .box {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .product .item {
+        width: 80%;
+        margin: 15px auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .accessories .item {
+        width: 80%;
+        margin: 15px auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .sale {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .sale1,
+    .sale2 {
+        width: 90%;
+    }
+}
+
+@media (max-width: 768px) {
+    .shop {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .shop input[type="email"] {
+        width: 90%;
+    }
+
+    .shop button {
+        margin: 5px auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .off {
+        width: 60px;
+        height: 60px;
+        top: 10px;
+    }
+}
+
+
+@media (max-width: 1024px) {
+    /* tablet ke changes */
+}
+@media (max-width: 768px) {
+    /* mobile ke changes */
+}
+@media (max-width: 480px) {
+    /* small mobile ke changes */
+}
